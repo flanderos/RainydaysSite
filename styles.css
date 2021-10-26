@@ -1,0 +1,132 @@
+body {
+  max-width: 2000px;
+  background-image: url(images/Rain-texture.jpg);
+}
+
+main {
+    height: 90vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  border: solid 1px black;
+}
+
+.logo {
+  width: 20%;
+}
+
+.sidebar {
+  min-height: 90vh;
+  border: solid 1px black;
+  float: left;
+  width: 10rem;
+  background-color: #0a3641;
+}
+
+nav ul {
+  text-decoration: none;
+}
+
+nav ul li {
+  text-decoration: none;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid black;
+  
+}
+
+.jackets {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+footer {
+  border: solid 1px black;
+}
+
+/* jackets-spesific */
+
+.product1 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+}
+
+.product2 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+}
+
+.product3 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+ 
+}
+
+.product4 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+  
+}
+
+.product5 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+
+}
+
+.product6 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+
+}
+
+.product7 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+}
+
+
+.product8 {
+  border: 3px solid orange;
+  background-color: #fff;
+  width:min-content;
+ }
+  
+
+
+.viewbutton {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1rem;
+    position: relative;
+    left: 12px;
+    bottom: 5px;
+    
+    
+}
+
+.active {
+    text-decoration: underline;
+}

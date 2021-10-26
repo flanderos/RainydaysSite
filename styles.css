@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  align-content: center;
 }
 
 main {
@@ -16,6 +17,7 @@ header {
   justify-content: center;
   border: solid 1px black;
   background-image: url(images/Rain-texture.jpg);
+  margin-top: 1rem;
 }
 
 .logo {
@@ -57,7 +59,6 @@ nav ul li a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 1px solid black;
   margin-top: 5rem;
   justify-content: space-evenly;
 }
@@ -148,6 +149,12 @@ i {
   display: flex;
 }
 
+.checkbox{
+    display: none;
+}
 
+#toggle {
+    display: none;
+}
 /* media queries */
 

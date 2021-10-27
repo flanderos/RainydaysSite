@@ -1,66 +1,80 @@
 body {
   max-width: 2000px;
-  width: 99%;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "bookman old style";
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-content: center;
+  margin: auto;
 }
 
 main {
-  height: 90vh;
+  min-height: 90vh;
+  background-color: #d8b066;
+  background-blend-mode: lighten;
+  z-index: 1;
+  position: relative;
 }
 header {
   display: flex;
   justify-content: center;
-  border: solid 1px black;
   background-image: url(images/Rain-texture.jpg);
-  margin-top: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
 }
 
 .logo {
   width: 18%;
-  min-width: 10rem;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 12rem;
+  max-width: 15rem;
+  margin: auto;
 }
 
+/*Navigation Bar */
+
 .sidebar {
-  min-height: 100vh;
-  border: solid 1px black;
-  float: left;
-  width: 15rem;
   background-color: #0a3641;
-  height: 100%;
+  font-weight: bold;
+  text-align: center;
+  height: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 nav ul {
-  text-decoration: none;
-  padding-top: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  margin: auto;
 }
 
 nav ul li {
-  text-decoration: none;
-  font-size: 1.5rem;
   list-style-type: none;
-  font-family: "bookman old style";
-  font-weight: bold;
+  display: inline;
   padding: 1rem;
+  margin: auto;
 }
 
-nav ul li a {
+a {
+  display: inline;
   color: #fff;
   text-decoration: none;
+  padding: 0.4rem;
 }
+
+/*Navigation Bar */
 
 .flex-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 5rem;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 5rem auto;
+  position: sticky;
+  border: 1px solid #0a3641;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .jackets {
@@ -73,18 +87,18 @@ nav ul li a {
 
 .container-footer {
   background-color: #fff;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
+  clear: both;
+  display: grid;
+  place-items: center;
 }
 
 footer {
-  border: solid 1px black;
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  margin-top: auto;
 }
 
 /* jackets-spesific */
@@ -145,16 +159,95 @@ i {
   color: #0a3641;
 }
 
+.cart-icon {
+  position: relative;
+  top: 5rem;
+}
+
 .footer-icons {
   display: flex;
 }
 
-.checkbox{
-    display: none;
+.checkbox {
+  display: none;
 }
 
 #toggle {
-    display: none;
+  display: none;
 }
+
+.homeIcon {
+    position: relative;
+    top: 5rem;
+}
+
+
+
 /* media queries */
+
+@media (max-width: 600px) {
+  .disappear {
+    display: none;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+
+  .flex-container {
+    margin-top: 2rem;
+  }
+
+ 
+  
+}
+
+/* Jacket-specific */
+
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 800px;
+  box-sizing: border-box;
+  margin: 5rem auto;
+  border: 1px solid #0a3641;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pinkJacket {
+  height: 38%;
+  width: 38%;
+  margin: auto;
+}
+
+.buttons {
+    margin: auto;
+    padding: 1rem;
+}
+
+.add2c {
+    color: #0a3641;
+    height: 2.5rem;
+    width: 12rem;
+    margin: 1rem;
+    border-radius: 11px;
+    border: 1px solid #0a3641;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.checkOutBtn {
+    color: #0a3641;
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: 11px;
+    border: 1px solid #0a3641;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 

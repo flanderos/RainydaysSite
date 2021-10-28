@@ -31,6 +31,10 @@ header {
   margin: auto;
 }
 
+.logo:hover {
+  transform: scale(1);
+}
+
 /*Navigation Bar */
 
 .sidebar {
@@ -98,7 +102,7 @@ a {
 
 footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* jackets-spesific */
@@ -148,8 +152,16 @@ footer {
   font-weight: bold;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .active {
   text-decoration: underline;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 /* icons */
@@ -177,11 +189,18 @@ i {
 }
 
 .homeIcon {
-    position: relative;
-    top: 5rem;
+  position: relative;
+  top: 5rem;
 }
 
+.search-icon {
+  position: relative;
+  top: 5rem;
+}
 
+i:hover {
+  cursor: pointer;
+}
 
 /* media queries */
 
@@ -198,8 +217,18 @@ i {
     margin-top: 2rem;
   }
 
- 
-  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .add2c {
+    margin: 0rem;
+  }
+
+  img:hover {
+    transform: scale(1);
+  }
 }
 
 /* Jacket-specific */
@@ -223,31 +252,38 @@ i {
 }
 
 .buttons {
-    margin: auto;
-    padding: 1rem;
+  margin: auto;
+  padding: 1rem;
 }
 
 .add2c {
-    color: #0a3641;
-    height: 2.5rem;
-    width: 12rem;
-    margin: 1rem;
-    border-radius: 11px;
-    border: 1px solid #0a3641;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  color: #0a3641;
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 11px;
+  border: 1px solid #0a3641;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .checkOutBtn {
-    color: #0a3641;
-    height: 2.5rem;
-    width: 12rem;
-    border-radius: 11px;
-    border: 1px solid #0a3641;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0a3641;
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 11px;
+  border: 1px solid #0a3641;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* ABOUT.HTML */
+
+.stockphoto {
+  max-width: 100%;
+}
+
+.stockphoto:hover {
+  transform: scale(1);
+}

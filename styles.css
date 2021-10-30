@@ -13,7 +13,6 @@ main {
   background-color: #d8b066;
   background-blend-mode: lighten;
   z-index: 1;
-  position: relative;
 }
 header {
   display: flex;
@@ -98,45 +97,55 @@ a {
   clear: both;
   display: grid;
   place-items: center;
+  z-index: -1;
 }
 
 footer {
   display: flex;
   justify-content: space-evenly;
+  padding: 1rem;
 }
 
 /* jackets-spesific */
 
 .product1 {
   width: min-content;
-}
+  text-align: center;
+} 
 
 .product2 {
   width: min-content;
+  text-align: center;
 }
 
 .product3 {
   width: min-content;
+  text-align: center;
 }
 
 .product4 {
   width: min-content;
+  text-align: center;
 }
 
 .product5 {
   width: min-content;
+  text-align: center;
 }
 
 .product6 {
   width: min-content;
+  text-align: center;
 }
 
 .product7 {
   width: min-content;
+  text-align: center;
 }
 
 .product8 {
   width: min-content;
+  text-align: center;
 }
 
 .viewbutton {
@@ -145,11 +154,11 @@ footer {
   font-size: 1rem;
   font-weight: bold;
   position: relative;
-  left: 12px;
   bottom: 5px;
   border-radius: 12px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
+  border: none;
 }
 
 button:hover {
@@ -160,7 +169,7 @@ button:hover {
   text-decoration: underline;
 }
 
-img:hover {
+product:hover {
   transform: scale(1.05);
 }
 
@@ -286,4 +295,98 @@ i:hover {
 
 .stockphoto:hover {
   transform: scale(1);
+}
+
+
+
+@media (min-width: 800px) {
+  .content-about-container {
+    min-height: 40em;
+    min-width: 20rem;
+    background-color: honeydew;
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 1em;
+    margin: 5em;
+  
+  }
+  
+  .box1 {
+    flex: 1;
+
+    animation: move 3s ease 1;
+    animation-fill-mode: forwards;
+    
+    
+  }
+  
+  @keyframes move { 
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100%{opacity: 0%;}
+    
+  }
+  
+  .box2 {
+    flex: 1;
+    
+    animation: hide 3s ease-in-out 3s;
+    animation-fill-mode:both;
+    
+  }
+  
+  
+  @keyframes hide { 
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100%{opacity: 0%;}
+    
+  }
+  
+  .box3 {
+    flex:1;
+    
+    animation: hideshow 3s ease-in-out 6s;
+    animation-fill-mode: both;
+    
+  }
+  
+  @keyframes hideshow { 
+    0% {opacity: 0%;}
+    50% {opacity: 100%;}
+    100%{opacity: 0%;} 
+  }
+  
+  .box4 {
+    display: flex;
+    justify-content: center;
+    animation: slideshow 3s ease-in-out 10s;
+    flex: 3;
+    animation: slideshow 3s ease-in-out 10s;
+    animation-fill-mode:both;
+    font-size: 70px;
+    max-width: 100%;
+    
+    
+  
+    
+  }
+  
+  @keyframes slideshow {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    99%{opacity: 100%;}
+    100%{transform: translate(-44%, 0);}
+  
+  }
+  
+  .Outside {
+    color: #0a3641;
+    
+    
+  }
+  
 }

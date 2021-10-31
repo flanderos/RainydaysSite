@@ -20,6 +20,7 @@ header {
   background-image: url(images/Rain-texture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   height: 10rem;
 }
 
@@ -299,11 +300,14 @@ i:hover {
 
 
 
+
+
 @media (min-width: 800px) {
   .content-about-container {
-    min-height: 40em;
+    color: #0a3641;
+    min-height: 25em;
     min-width: 20rem;
-    background-color: honeydew;
+    background-color: #fff;
     margin: 5rem;
     display: flex;
     flex-direction: row;
@@ -311,6 +315,7 @@ i:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     padding: 1em;
     margin: 5em;
+    font-size: 1.5rem;
   
   }
   
@@ -370,11 +375,8 @@ i:hover {
     font-size: 70px;
     max-width: 100%;
     
-    
-  
-    
   }
-  
+
   @keyframes slideshow {
     0% {opacity: 0%;}
     50% {opacity: 50%;}
@@ -382,11 +384,57 @@ i:hover {
     100%{transform: translate(-44%, 0);}
   
   }
+
   
   .Outside {
-    color: #0a3641;
-    
-    
+    color:#0a3641;
+
   }
   
 }
+
+/* Checkout.html */
+
+.checkout-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: none;
+  
+  
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+
+}
+
+.BUYBTN {
+  width: 15rem;
+  height: 3.5rem;
+  font-size: 1.7rem;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 9px;
+  
+  
+}
+
+form label {
+  flex: 1;
+}
+
+form input {
+  display: flex;
+  flex: 1;
+}
+
+
+

@@ -37,6 +37,8 @@ header {
 
 /*Navigation Bar */
 
+
+
 .sidebar {
   background-color: #0a3641;
   font-weight: bold;
@@ -176,6 +178,25 @@ product:hover {
 
 /* icons */
 
+#hamburger-menu {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.hamburger-label {
+  display: none;
+}
+
+
+.hamburger-icon {
+  position: absolute;
+  left: 0;
+  margin: 1rem;
+  display: none;
+  
+}
+
 i {
   font-size: 3rem;
   color: #0a3641;
@@ -215,8 +236,37 @@ i:hover {
 /* media queries */
 
 @media (max-width: 600px) {
-  .disappear {
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  #hamburger-menu:checked ~ .sidebar {
     display: none;
+  }
+ 
+
+  .sidebar, #hamburger-menu{
+    display: none;
+  }
+
+  .sidebar {
+    display: flex;
+    z-index: 10;
+    min-height: 100%;
+    position: absolute;
+    margin-top: 2rem;
+
+  }
+
+  nav ul {
+    padding: 8rem;
+  }
+
+  nav ul li {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
   }
 
   .active {
@@ -225,11 +275,13 @@ i:hover {
 
   .flex-container {
     margin-top: 2rem;
+    min-height: 100%;
   }
 
   .buttons {
     display: flex;
     flex-direction: row;
+    background-color: rgb(238, 235, 235);
   }
 
   .add2c {
@@ -239,6 +291,8 @@ i:hover {
   img:hover {
     transform: scale(1);
   }
+
+  
 }
 
 /* Jacket-specific */
@@ -408,6 +462,7 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 
 form {

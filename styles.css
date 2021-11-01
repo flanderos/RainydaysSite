@@ -189,13 +189,7 @@ product:hover {
 }
 
 
-.hamburger-icon {
-  position: absolute;
-  left: 0;
-  margin: 1rem;
-  display: none;
-  
-}
+
 
 i {
   font-size: 3rem;
@@ -239,25 +233,22 @@ i:hover {
 
   .hamburger-icon {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+  }
+
+
+  #hamburger-menu {
+    display: none;
   }
 
   #hamburger-menu:checked ~ .sidebar {
-    display: none;
-  }
- 
-
-  .sidebar, #hamburger-menu{
-    display: none;
+    min-height: 25rem;
+    
   }
 
-  .sidebar {
-    display: flex;
-    z-index: 10;
-    min-height: 100%;
-    position: absolute;
-    margin-top: 2rem;
-
-  }
 
   nav ul {
     padding: 8rem;
@@ -375,7 +366,6 @@ i:hover {
   
   .box1 {
     flex: 1;
-
     animation: move 3s ease 1;
     animation-fill-mode: forwards;
     

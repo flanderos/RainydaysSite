@@ -235,12 +235,12 @@ i {
   display: none;
 }
 
-.homeicon {
+.backarrow {
   position: absolute;
-  top: 5rem;
+  top: 14rem;
   left: 1rem;
+  z-index: 20;
   
-
 }
 
 .search-icon {
@@ -258,9 +258,10 @@ i:hover {
   .hamburger-icon {
     display: block;
     position: absolute;
-    top: 5rem;
-    right: 0;
-    margin: 1rem;
+    top: 14rem;
+    right: 1rem;
+    z-index: 20;
+    
     
   }
 
@@ -292,10 +293,12 @@ i:hover {
   }
 
   .flex-container {
-    margin-top: 2rem;
+    margin-top: 4.5rem;
     min-height: 100%;
-    margin: 1rem;
+   
   }
+
+ 
 
   .buttons {
     margin: auto;
@@ -324,6 +327,7 @@ i:hover {
     transform: scale(1);
   }
 
+
 }
 
 /* Jacket-specific */
@@ -333,17 +337,21 @@ i:hover {
   justify-content: center;
   flex-direction: column;
   max-width: 800px;
-  box-sizing: border-box;
+  min-width: none;  
   margin: 5rem auto;
   border: 1px solid #0a3641;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
+
 }
 
-h5 {
-  color: #fff;
-  background-color: #0a3641;
+.price {
+  margin: 1rem auto;
+  max-width: 5rem;
+  color: black;
+  padding: 1rem;
+  
 }
   
 

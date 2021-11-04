@@ -188,7 +188,9 @@ product:hover {
   display: none;
 }
 
-
+.hamburger-icon {
+  display: none;
+}
 
 
 i {

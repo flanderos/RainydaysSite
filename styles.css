@@ -372,7 +372,7 @@ h5 {
   display: inline;
   text-transform: none;
   min-width: none;
-  line-break: auto;
+  line-height: 1rem;
 }
 
 .checkOutBtn {
@@ -387,6 +387,7 @@ h5 {
   margin: 1rem;
   font-size: 1rem;
   min-width: none;
+  line-height: 1rem;
   
 }
 

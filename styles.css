@@ -78,6 +78,7 @@ a {
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
 }
 
 .jackets {
@@ -299,7 +300,6 @@ i:hover {
   }
 
  
-
   .buttons {
     margin: auto;
   }
@@ -343,6 +343,7 @@ i:hover {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
+  
 
 }
 

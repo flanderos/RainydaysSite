@@ -5,7 +5,6 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: auto;
 }
 
 main {
@@ -62,7 +61,7 @@ a {
   display: inline;
   color: #fff;
   text-decoration: none;
-  padding: 0.4rem;
+  
 }
 
 /*Navigation Bar */
@@ -112,42 +111,57 @@ footer {
 .product1 {
   width: min-content;
   text-align: left;
-  
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product2 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product3 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product4 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product5 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product6 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product7 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .product8 {
   width: min-content;
   text-align: left;
+  border: 1px solid #0a3641 ;
+  padding: 1rem;
 }
 
 .viewbutton {
@@ -220,9 +234,13 @@ i {
   display: none;
 }
 
-.homeIcon {
-  position: relative;
+.homeicon {
+  position: absolute;
   top: 5rem;
+  left: 1rem;
+  
+ 
+  
 }
 
 .search-icon {
@@ -240,9 +258,9 @@ i:hover {
   .hamburger-icon {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 1rem;
+    top: 5rem;
+    right: 1rem;
+    
   }
 
   #hamburger-menu {
@@ -272,15 +290,16 @@ i:hover {
     min-height: 100%;
   }
 
-
   .buttons a {
     display: flex;
     flex-direction: row;
     padding: 1rem;
+    
   }
 
   .add2c {
     max-width: 8rem;
+    
   }
 
   .checkOutBtn {
@@ -289,6 +308,10 @@ i:hover {
 
   img:hover {
     transform: scale(1);
+  }
+
+  .product {
+    margin-top: ;
   }
 }
 

@@ -372,6 +372,7 @@ h5 {
   display: inline;
   text-transform: none;
   min-width: none;
+  line-break: auto;
 }
 
 .checkOutBtn {

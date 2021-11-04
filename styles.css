@@ -371,6 +371,7 @@ h5 {
   font-size: 1rem;
   display: inline;
   text-transform: none;
+  word-wrap: break-word;
 }
 
 .checkOutBtn {

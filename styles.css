@@ -63,7 +63,6 @@ a {
   text-decoration: none;
 }
 
-
 /*Navigation Bar */
 
 .flex-container {
@@ -78,7 +77,6 @@ a {
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
 }
 
 .jackets {
@@ -87,6 +85,7 @@ a {
   padding: 1rem;
   flex: 2;
   justify-content: space-around;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-footer {
@@ -112,56 +111,56 @@ footer {
 .product1 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product2 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product3 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product4 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product5 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product6 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product7 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
 .product8 {
   width: min-content;
   text-align: left;
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   padding: 1rem;
 }
 
@@ -176,8 +175,6 @@ footer {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   border: 0.5px solid #0a3641;
-
-  
 }
 
 .price {
@@ -241,7 +238,6 @@ i {
   top: 14rem;
   left: 1rem;
   z-index: 20;
-  
 }
 
 .search-icon {
@@ -262,19 +258,15 @@ i:hover {
     top: 14rem;
     right: 1rem;
     z-index: 20;
-    
-    
   }
 
   #hamburger-menu {
     display: none;
-
   }
 
   #hamburger-menu:checked ~ .sidebar {
     min-height: 25rem;
   }
-
 
   nav ul {
     margin: auto;
@@ -296,10 +288,8 @@ i:hover {
   .flex-container {
     margin-top: 4.5rem;
     min-height: 100%;
-   
   }
 
- 
   .buttons {
     margin: auto;
   }
@@ -308,15 +298,12 @@ i:hover {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    
   }
 
   .add2c {
     max-width: 8rem;
     word-wrap: break-word;
     white-space: normal;
-    
-    
   }
 
   .checkOutBtn {
@@ -326,8 +313,6 @@ i:hover {
   img:hover {
     transform: scale(1);
   }
-
-
 }
 
 /* Jacket-specific */
@@ -337,14 +322,17 @@ i:hover {
   justify-content: center;
   flex-direction: column;
   max-width: 800px;
-  min-width: none;  
+  min-width: none;
   margin: 5rem auto;
   border: 1px solid #0a3641;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+h5 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .price {
@@ -352,9 +340,7 @@ i:hover {
   max-width: 5rem;
   color: black;
   padding: 1rem;
-  
 }
-  
 
 .pinkJacket {
   height: 38%;
@@ -368,7 +354,6 @@ i:hover {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-
 
 .add2c {
   color: #0a3641;
@@ -400,11 +385,25 @@ i:hover {
   font-size: 1rem;
   min-width: none;
   line-height: 1rem;
-  
-  
 }
 
 /* ABOUT.HTML */
+
+.content-about-container {
+  margin: 1rem;
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+
+.Outside {
+  position: relative;
+  bottom: -40rem;
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  
+  
+}
 
 .stockphoto {
   max-width: 100%;
@@ -528,14 +527,19 @@ i:hover {
 }
 
 fieldset {
-  border: none;
+  border: 1px solid #0a3641 ;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
+  background-color: #fff;
+  text-align: left;
+  font-size: 1.25rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  
 }
 
-form {
-  font-size: 1.25rem;
+form{
   margin-top: 1rem;
 }
 
@@ -546,6 +550,10 @@ form {
   justify-content: center;
   font-weight: bold;
   border-radius: 9px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  
 }
 
 form label {
@@ -556,3 +564,41 @@ form input {
   display: flex;
   flex: 1;
 }
+
+.size {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+
+/* Contact html */
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.contactinfo {
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  margin-top: 6rem;
+  text-justify: distribute;
+  text-rendering: geometricPrecision;
+}
+
+/* lastpage */
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 50%;
+}
+

@@ -369,7 +369,8 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
   font-size: 1rem;
-  align-content: center;
+  display: inline;
+  text-transform: none;
 }
 
 .checkOutBtn {
@@ -383,7 +384,7 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
   font-size: 1rem;
-  align-content: center;
+  
 }
 
 /* ABOUT.HTML */

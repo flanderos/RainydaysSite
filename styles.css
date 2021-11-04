@@ -310,6 +310,9 @@ i:hover {
 
   .add2c {
     max-width: 8rem;
+    word-wrap: break-word;
+    white-space: normal;
+    
     
   }
 
@@ -388,6 +391,7 @@ h5 {
   font-size: 1rem;
   min-width: none;
   line-height: 1rem;
+  
   
 }
 

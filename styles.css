@@ -353,6 +353,8 @@ h5 {
 .buttons {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 
@@ -367,6 +369,7 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
   font-size: 1rem;
+  align-content: center;
 }
 
 .checkOutBtn {
@@ -380,6 +383,7 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
   font-size: 1rem;
+  align-content: center;
 }
 
 /* ABOUT.HTML */

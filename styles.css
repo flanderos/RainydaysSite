@@ -270,7 +270,9 @@ i:hover {
 
 @media (max-width: 600px) {
 
-  
+  .Outside {
+    top: 0;
+  }
 
   .hamburger-icon {
     display: block;
@@ -413,6 +415,7 @@ h5 {
   margin: 1rem;
   margin-top: 8rem;
   font-size: 2rem;
+  position: relative;
   
 }
 
@@ -425,8 +428,18 @@ h5 {
   
 }
 
+.stockphoto-container {
+  display: flex;
+  margin: auto;
+}
+
 .stockphoto {
-  max-width: 100%;
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 5rem;
+  max-height: 50%;
+  
+  
 }
 
 .stockphoto:hover {
@@ -434,6 +447,10 @@ h5 {
 }
 
 @media (min-width: 800px) {
+
+
+
+
   .content-about-container {
     color: #0a3641;
     min-height: 25em;
@@ -448,12 +465,14 @@ h5 {
     padding: 1em;
     margin: 5em;
     font-size: 1.5rem;
+    position: relative;
   }
 
   .box1 {
     flex: 1;
     animation: move 3s ease 1;
     animation-fill-mode: forwards;
+    position: absolute;
   }
 
   @keyframes move {
@@ -470,6 +489,7 @@ h5 {
 
   .box2 {
     flex: 1;
+    position: absolute;
 
     animation: hide 3s ease-in-out 3s;
     animation-fill-mode: both;
@@ -489,6 +509,7 @@ h5 {
 
   .box3 {
     flex: 1;
+    position: absolute;
 
     animation: hideshow 3s ease-in-out 6s;
     animation-fill-mode: both;
@@ -515,6 +536,7 @@ h5 {
     animation-fill-mode: both;
     font-size: 70px;
     max-width: 100%;
+    position: absolute;
     
   }
 
@@ -529,7 +551,7 @@ h5 {
       opacity: 100%;
     }
     100% {
-      transform: translate(-44%,  0);
+      transform: translate(auto,  44%);
   
   }
 }

@@ -13,7 +13,6 @@ main {
   background-color: #d8b066;
   background-blend-mode: lighten;
   z-index: 1;
-  
 }
 header {
   display: flex;
@@ -41,9 +40,8 @@ contact.html {
   margin: auto;
   max-width: 2000px;
   margin-left: auto;
-
 }
- 
+
 /*Navigation Bar */
 
 .sidebar {
@@ -71,9 +69,7 @@ a {
   display: inline;
   color: #fff;
   text-decoration: none;
-  
 }
-
 
 /*Navigation Bar */
 
@@ -97,7 +93,7 @@ a {
   padding: 1rem;
   flex: 2;
   justify-content: space-around;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container-footer {
@@ -107,8 +103,6 @@ a {
   left: 0;
   width: 100%;
   z-index: -1;
-  
-
 }
 
 footer {
@@ -116,7 +110,6 @@ footer {
   justify-content: space-between;
   padding: 1rem;
   margin: auto;
-  
 }
 
 /* jackets-spesific */
@@ -242,7 +235,6 @@ i {
 
 .github-icon {
   margin-right: 5rem;
-
 }
 
 .checkbox {
@@ -261,7 +253,6 @@ i {
   max-width: 2000px;
 }
 
-
 i:hover {
   cursor: pointer;
 }
@@ -269,7 +260,6 @@ i:hover {
 /* media queries */
 
 @media (max-width: 600px) {
-
   .Outside {
     top: 0;
   }
@@ -350,11 +340,11 @@ i:hover {
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h5 {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .price {
@@ -416,7 +406,6 @@ h5 {
   margin-top: 8rem;
   font-size: 2rem;
   position: relative;
-  
 }
 
 .Outside {
@@ -425,7 +414,6 @@ h5 {
   font-size: 5rem;
   color: #fff;
   text-align: center;
-  
 }
 
 .stockphoto-container {
@@ -438,8 +426,6 @@ h5 {
   margin: auto;
   margin-bottom: 5rem;
   max-height: 50%;
-  
-  
 }
 
 .stockphoto:hover {
@@ -447,10 +433,6 @@ h5 {
 }
 
 @media (min-width: 800px) {
-
-
-
-
   .content-about-container {
     color: #0a3641;
     min-height: 25em;
@@ -537,7 +519,6 @@ h5 {
     font-size: 70px;
     max-width: 100%;
     position: absolute;
-    
   }
 
   @keyframes slideshow {
@@ -551,10 +532,9 @@ h5 {
       opacity: 100%;
     }
     100% {
-      transform: translate(auto,  44%);
-  
+      transform: translate(auto, 44%);
+    }
   }
-}
 
   .Outside {
     color: #0a3641;
@@ -572,19 +552,19 @@ h5 {
 }
 
 fieldset {
-  border: 1px solid #0a3641 ;
+  border: 1px solid #0a3641;
   display: flex;
   flex-direction: column;
   margin-top: 5rem;
   background-color: #fff;
   text-align: left;
   font-size: 1.25rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-form{
+form {
   margin-top: 1rem;
 }
 
@@ -598,7 +578,6 @@ form{
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-right: 2rem;
-  
 }
 
 form label {
@@ -616,7 +595,6 @@ form input {
   text-align: left;
   font-size: 2rem;
 }
-
 
 /* Contact html */
 
@@ -642,23 +620,21 @@ form input {
 
 .thank-you {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   flex-direction: column;
-  margin:  10rem  auto;
+  margin: 10rem auto;
   min-height: 10rem;
   max-width: 50%;
   border: 1px solid black;
 }
 
 .last-rainy {
-  flex:1;
-  font-size: auto ;
+  flex: 1;
+  font-size: auto;
   margin: auto;
-
 }
 
 .here {
   margin-top: 5rem;
   font-size: 1.4rem;
 }
-

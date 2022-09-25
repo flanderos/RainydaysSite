@@ -37,7 +37,7 @@ header {
   transform: scale(1);
 }
 
-contact.html {
+.contact.html {
   margin: auto;
   max-width: 2000px;
   margin-left: auto;
@@ -224,7 +224,7 @@ button:hover {
 }
 
 i {
-  font-size: 3rem;
+  font-size: 1rem;
   color: #0a3641;
 }
 

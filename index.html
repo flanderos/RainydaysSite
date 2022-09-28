@@ -26,6 +26,11 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <div class="secondmenu">
+      <i class="fa-solid fa-cart-shopping" id="cart"></i>
+      <div class="counter">-1</div>
+      <div class="itemlist"></div>
+    </div>
     <main>
       <div class="flex-container">
         <section class="jackets">
@@ -36,9 +41,12 @@
               src="images/rainjacket2.jpg"
               alt="Pink jacket"
               id ="jacketlink"
-            /></a>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            />
+          </a>
+          <div class="producticons">
+            <i class="fa-solid fa-heart" id="love1"></i>
+            <i class="fa-solid fa-cart-shopping" id="item1"></i>
+          </div>
           </div>
           
           <div class="product2">
@@ -49,8 +57,10 @@
               alt="black jacket"
               id="jacketlink"
             /></a>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="producticons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping" id="item2"></i>
+            </div>
           </div>
           <div class="product3">
             <h3>Rainydays &copy;</h3><h5>Glittertind</h5>
@@ -60,8 +70,10 @@
               alt="Orange jacket"
               id="jacketlink"
             /></a>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="producticons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping" id="item3"></i>
+            </div>
           </div>
           <div class="product4">
             <h3>Rainydays &copy;</h3><h5>Spaatind</h5>
@@ -71,24 +83,30 @@
               alt="military jacket"
               id="jacketlink"
             /></a>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="producticons">
+              <i class="fa-solid fa-heart" id="jacket4"></i>
+              <i class="fa-solid fa-cart-shopping" id="item4"></i>
+            </div>
           </div>
           <div class="product5">
             <h3>Rainydays &copy;</h3><h5>Gråhöe fall</h5>
             <a href="jacket5.html"><img class="product" src="images/rainmen1.jpg" alt="Pink jacket" />
             </a>
             <div class="jacketicons">
-              <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+              <div class="producticons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping" id="item5"></i>
+              </div>
             </div>
           </div>
           <div class="product6">
             <h3>Rainydays &copy;</h3><h5>Snöhetta</h5>
             <a href="jacket6.html"><img class="product" src="Images/rainmen2.jpg" alt="black jacket" id="jacketlink"/>
         </a>
-        <i class="fa-solid fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="producticons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping" id="item6"></i>
+        </div>
           </div>
           <div class="product7">
             <h3>Rainydays &copy;</h3><h5>Besseggen</h5>
@@ -99,8 +117,10 @@
               id="jacketlink"
             />
         </a>
-        <i class="fa-solid fa-heart"></i>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="producticons">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping" id="item7"></i>
+        </div>
           </div>
           <div class="product8">
             <h3>Rainydays &copy;</h3><h5>Skjellingshövde</h5>
@@ -110,8 +130,10 @@
               alt="military jacket"
               id="jacketlink"
             /></a>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="producticons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-cart-shopping " id="item8"></i>
+            </div>
           </div>
         </section>
       </div>
@@ -124,5 +146,7 @@
   </footer>  
 </div>
   </body>
+  <script src="script.js"></script>
+  <script src="productcard.js"></script>
 </html>
 

@@ -12,6 +12,7 @@ const itemEight = document.querySelector("#item8");
 let itemList = document.querySelector(".itemlist");
 let counter = document.querySelector(".counter");
 let counterState = Number(counter.innerText);
+let product = document.querySelector("#product");
 
 itemOne.addEventListener("click", addTooCart);
 itemTwo.addEventListener("click", addTooCart);
@@ -26,6 +27,8 @@ function addTooCart() {
   counter.innerText = counterState += 1;
   console.log("it works");
 
+  itemList.innerHTML += `<li>${product}</li>`;
+
   if (counterState < 1) {
     counter.style.display = "none";
   } else {
@@ -34,3 +37,21 @@ function addTooCart() {
 }
 
 addTooCart();
+
+cart.addEventListener("click", showCart);
+
+function showCart() {}
+
+// inside the cart
+
+function addToList() {}
+
+shoppingCart.addEventListener("click", checkCart);
+
+function checkCart() {
+  console.log("it workdsrsr");
+}
+
+checkCart();
+
+//checkout page

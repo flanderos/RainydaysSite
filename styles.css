@@ -432,6 +432,27 @@ h5 {
   display: flex;
 }
 
+.itemlist {
+  height: 60vh;
+  width: 300px;
+  margin-top: 120px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #fff;
+  z-index: 2;
+  border: 1px solid #0a3641;
+  right: 3000px;
+}
+
+.producticons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
 /* ABOUT.HTML */
 
 .content-about-container {
@@ -628,6 +649,31 @@ form input {
   text-align: left;
   font-size: 2rem;
 }
+
+/* form validation*/
+
+.error {
+  color: red;
+  font-size: 1rem;
+}
+
+#email-error {
+  display: none;
+}
+
+#name-error {
+  display: none;
+}
+
+#adress-error {
+  display: none;
+}
+
+#phone-error {
+  display: none;
+}
+
+/* form validation*/
 
 /* Contact html */
 

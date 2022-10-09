@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9061f39b3c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00a541403c.js" crossorigin="anonymous"></script>
     <title>Galdhöpiggen allround</title>
 </head>
     <body>
         <header>
-          <i class="backarrow"><a href="index.html"><img src="images/backarrow.svg"></i></a>
+          
             <img
               class="logo"
               src="images/RainyDays_Logo.png"
@@ -26,16 +26,24 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
+          <div class="secondmenu">
+            <div class="cartdiv">
+            <i class="fa-solid fa-cart-shopping" id="cart"></i>
+            <div class="counter">-1</div>
+          </div>
+        </div>
           <div class="flex-container2">
             <h3 class="">Galdhöpiggen allround</h3>
-             <img class="pinkJacket" src="images/ranjacket3.jpg"><h5 class="price">1999NOK</h5></i> <div class="buttons"><div class="buttons"><a href="checkout.html"><button class="add2c">Add to cart</button><button class="checkOutBtn">Checkout</button></a>
+             <img class="pinkJacket" src="images/ranjacket3.jpg"><h5 class="price">1999NOK</h5></i> <div class="buttons"><div class="buttons"><button class="add2c" onclick="addTooCart()">Add to cart</button><a href="checkout.html"><button class="checkOutBtn">Checkout</button></a><a href="index.html"><button class="shopmorebtn">Shop More</button></a>
             </div> 
-            
           </div>
           </main>
           <div class="container-footer">
             <footer>
               <h2>www.rainydays.com &copy;</h2>
             </footer>
+            <script src="script.js"></script>
+            <script src="product.js"></script>
+            <script src="productcontainer.js"></script>
     </body>
 </html>

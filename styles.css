@@ -418,6 +418,21 @@ h5 {
   line-height: 1rem;
 }
 
+.shopmorebtn {
+  color: #0a3641;
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 11px;
+  border: 1px solid #0a3641;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  font-size: 1rem;
+  min-width: none;
+  line-height: 1rem;
+}
+
 #cart {
   color: #fff;
   font-size: 2.5rem;
@@ -430,18 +445,42 @@ h5 {
   background-color: #53a1b4;
   padding: 20px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.login-error-one {
+  display: none;
+}
+
+.login-error-two {
+  display: none;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+.cartdiv {
+  display: flex;
+}
+
+.login-input {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
 }
 
 .itemlist {
   height: 60vh;
   width: 300px;
   margin-top: 120px;
-  position: absolute;
+
   background-color: #fff;
   border: 1px solid #fff;
   z-index: 2;
   border: 1px solid #0a3641;
-  right: 3000px;
 }
 
 .producticons {
@@ -598,11 +637,27 @@ h5 {
 
 /* Checkout.html */
 
+.address-header {
+  font-size: 1.3rem;
+}
+
+.address-box {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-style {
+  font-size: 1rem;
+}
+
 .checkout-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: none;
+  margin-bottom: 5rem;
+  right: 0px;
 }
 
 fieldset {
@@ -620,6 +675,7 @@ fieldset {
 
 form {
   margin-top: 1rem;
+  display: block;
 }
 
 .BUYBTN {
@@ -651,6 +707,14 @@ form input {
 }
 
 /* form validation*/
+
+#city-error {
+  display: none;
+}
+
+#code-error {
+  display: none;
+}
 
 .error {
   color: red;
@@ -698,9 +762,7 @@ form input {
 /* lastpage */
 
 .thank-you {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  display: none;
   margin: 10rem auto;
   min-height: 10rem;
   max-width: 50%;

@@ -1,13 +1,14 @@
 const jacketSpecificContainer = document.querySelector(".flex-container2");
 
+const title = document.querySelector("title");
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const newUrl =
-  "https://cm.ahutvikling.no/wp-json/wc/store/products" + "/" + "id";
+const newUrl = "https://cm.ahutvikling.no/wp-json/wc/store/products";
 
 async function callApiForProductpage(newUrl) {
   const response = await fetch(newUrl);
@@ -21,7 +22,9 @@ async function callApiForProductpage(newUrl) {
       <button class="add2c" onclick="addTooCart()">Add to cart</button>
       <a href="checkout.html"><button class="checkOutBtn">Checkout</button></a>
       <a href="index.html"><button class="shopmorebtn">Shop More</button></a>`;
+
+    title.innerText = `${product.name}`;
   });
 }
 
-callApiForProductpage();
+callApiForProductpage(newUrl);

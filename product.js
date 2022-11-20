@@ -1,52 +1,33 @@
-const priceDisplay = document.querySelector(".productprice");
-const container = document.querySelectorAll("#product");
+const url = "https://cm.ahutvikling.no/wp-json/wc/store/v1/products";
 
-const products = [
-  {
-    name: "Trolltunga",
-    id: 01,
-    price: 1999,
-  },
+const productContainer = document.querySelector(".jackets");
 
-  {
-    name: "Galdhöpiggen allround",
-    id: 02,
-    price: 1999,
-  },
+async function getProducts(url) {
+  const response = await fetch(url);
+  const products = await response.json();
+  products.forEach(function (product) {
+    productContainer.innerHTML += `<div class="product1" id="product">
+    <h3>Rainydays &copy;</h3>
+    <h5 id="pname">${product.name}</h5>
+    <a href="${specificUrl}">
+      <img
+        class="product"
+        src="${product.images[0].src}"
+        alt="Pink jacket"
+        id="jacketlink"
+      />
+    </a>
+    <div class="producticons">
+      <i class="fa-solid fa-heart" id="love1"></i>
+      <p class="productprice">${product.price}</p>
+      <i class="fa-solid fa-cart-shopping" id="item1"></i>
+    </div>
+  </div>`;
+  });
+}
 
-  {
-    name: "Glittertind",
-    id: 03,
-    price: 2499,
-  },
+getProducts(url);
 
-  {
-    name: "Spaatind",
-    id: 04,
-    price: 999,
-  },
+const specificUrl = url + "/wp/v2/posts?_fields=id";
 
-  {
-    name: "Gråhöe fall",
-    id: 05,
-    price: 4999,
-  },
-
-  {
-    name: "Snöhetta",
-    id: 06,
-    price: 3999,
-  },
-
-  {
-    name: "Besseggen",
-    id: 07,
-    price: 3499,
-  },
-
-  {
-    name: "Skjellingshövde",
-    id: 08,
-    price: 2999,
-  },
-];
+//Jacket specific

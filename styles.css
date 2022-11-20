@@ -724,39 +724,6 @@ form input {
   font-size: 2rem;
 }
 
-/* form validation*/
-
-#city-error {
-  display: none;
-}
-
-#code-error {
-  display: none;
-}
-
-.error {
-  color: red;
-  font-size: 1rem;
-}
-
-#email-error {
-  display: none;
-}
-
-#name-error {
-  display: none;
-}
-
-#adress-error {
-  display: none;
-}
-
-#phone-error {
-  display: none;
-}
-
-/* form validation*/
-
 /* Contact html */
 
 .map {
@@ -780,7 +747,7 @@ form input {
 /* lastpage */
 
 .thank-you {
-  display: none;
+
   margin: 10rem auto;
   min-height: 10rem;
   max-width: 50%;

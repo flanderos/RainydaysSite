@@ -5,11 +5,12 @@ const productContainer = document.querySelector(".jackets");
 async function getProducts(url) {
   const response = await fetch(url);
   const products = await response.json();
+
   products.forEach(function (product) {
     productContainer.innerHTML += `<div class="product1" id="product">
     <h3>Rainydays &copy;</h3>
     <h5 id="pname">${product.name}</h5>
-    <a href="jacket-specific.html?id=?${product[0]}">
+    <a href="jacket-specific.html?${product}">
       <img
         class="product"
         src="${product.images[0].src}"
@@ -24,10 +25,10 @@ async function getProducts(url) {
     </div>
   </div>`;
   });
+
+  console.log(product[0].attributes);
 }
 
 getProducts(url);
-
-const specificUrl = url + "/wp/v2/posts?_fields=id";
 
 //Jacket specific

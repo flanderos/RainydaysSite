@@ -24,8 +24,6 @@ async function getProducts(url) {
       <i class="fa-solid fa-cart-shopping" id="item1"></i>
   </div>`;
   });
-
-  console.log(product[0].attributes);
 }
 
 getProducts(url);

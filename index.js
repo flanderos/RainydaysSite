@@ -1,5 +1,3 @@
-//Add to cart function
-/*
 const shoppingCart = document.querySelector("#cart");
 const itemOne = document.querySelector("#item1");
 const itemTwo = document.querySelector("#item2");
@@ -49,6 +47,3 @@ shoppingCart.addEventListener("click", checkCart);
 function checkCart() {}
 
 checkCart();
-
-//checkout page
-*/

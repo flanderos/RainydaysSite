@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/9061f39b3c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/00a541403c.js" crossorigin="anonymous"></script>
     <title>http://www.rainydays.com</title>
 </head>
 <body>
@@ -31,28 +31,38 @@
           <fieldset>
             <form action="Last.html"></form>
               <label for email="email">Email</label>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" placeholder="youremail@email.com">
+              <p class="error" id ="email-error">Please enter your email</p>
               <label for="name">Full Name</label>
-              <input type="text" id="name" name="name">
-              <label for="Adress">Billing-Adress</label>
-              <input type="text" id="Adress" name="Adress">
+              <input type="text" id="name" name="name" placeholder="Name">
+              <p class="error" id ="name-error">Please enter your name </p>
+                <div class="address-box">
+                  <h2 class="address-header">Address</h2>
+                  <label for="Adress" class="adress-style">Street Name</label>
+                  <input type="text" id="Adress" name="Adress" placeholder="">
+                  <p class="error" id = "adress-error">please enter your streetname</p>
+                  <label for="postal-code" class="adress-style" id ="code-input">Postal code</label>
+                  <input type="text" id ="postal-code" name ="postal-code" placeholder="">
+                  <p class="error" id ="code-error"> please enter your postal-code 4 digits</p>
+                  <label for="city" class="adress-style">City</label>
+                  <input type="text" id="city-name" name="city-name" placeholder="">
+                  <p class="error" id ="city-error"> Please enter your correct city</p>
+                </div>
               <label for="phone">Phone</label>
               <input type="tel" id="phone" name="phone">
-              <h3 class="size">Size</h3>
-              <label for="Small">Small</label>
-              <input type="radio" id="size" name="size" value="Small">
-              <label for="Medium">Medium</label>
-              <input type="radio" id="size" name="size" value="Medium"> 
-              <label for="Large">Large</label>
-              <input type="radio" id="size" name="size" value="Large"> 
-              <a href="Last.html"><button class="BUYBTN">BUY</button></a>
+              <p class="error" id ="phone-error">please enter your phone number</p>
+              <button class="BUYBTN">BUY</button>
             </form>
           </fieldset>
       </section>
+      <div class="thank-you"><h2>Thank you for shopping at Rainydays.com</h2>
+        <p class="here">Follow your order<a href="http://www.posten.no">HERE</a></p>
+      </div>
       </main>
       <div class="container-footer">
         <footer>
           <h2>www.rainydays.com &copy;</h2> 
         </footer>
+        <script src="error.js"></script>
 </body>
 </html>

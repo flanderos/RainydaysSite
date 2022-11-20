@@ -14,6 +14,7 @@ main {
   background-blend-mode: lighten;
   z-index: 1;
 }
+
 header {
   display: flex;
   justify-content: center;
@@ -36,7 +37,7 @@ header {
   transform: scale(1);
 }
 
-contact.html {
+.contact.html {
   margin: auto;
   max-width: 2000px;
   margin-left: auto;
@@ -113,6 +114,28 @@ footer {
 }
 
 /* jackets-spesific */
+
+#jacketlink:hover {
+  cursor: pointer;
+}
+
+.sizes {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.box {
+  border: 1px solid #0a3641;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box:hover {
+  cursor: pointer;
+}
 
 .product1 {
   width: min-content;
@@ -198,7 +221,8 @@ button:hover {
 }
 
 .product:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  transition: 0.3s;
 }
 
 /* icons */
@@ -218,7 +242,7 @@ button:hover {
 }
 
 i {
-  font-size: 3rem;
+  font-size: 1rem;
   color: #0a3641;
 }
 
@@ -254,6 +278,19 @@ i {
 }
 
 i:hover {
+  cursor: pointer;
+}
+
+.counter {
+  font-size: 1rem;
+  border: 1px solid #fff;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.counter:hover {
   cursor: pointer;
 }
 
@@ -397,6 +434,80 @@ h5 {
   font-size: 1rem;
   min-width: none;
   line-height: 1rem;
+}
+
+.shopmorebtn {
+  color: #0a3641;
+  height: 2.5rem;
+  width: 12rem;
+  border-radius: 11px;
+  border: 1px solid #0a3641;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 1rem;
+  font-size: 1rem;
+  min-width: none;
+  line-height: 1rem;
+}
+
+#cart {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.secondmenu {
+  background-color: #53a1b4;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.login-error-one {
+  display: none;
+}
+
+.login-error-two {
+  display: none;
+}
+
+#bold {
+  font-weight: 700;
+}
+
+.cartdiv {
+  display: flex;
+}
+
+.login-input {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.itemlist {
+  height: 60vh;
+  width: 300px;
+  margin-top: 120px;
+
+  background-color: #fff;
+  border: 1px solid #fff;
+  z-index: 2;
+  border: 1px solid #0a3641;
+}
+
+.producticons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
 }
 
 /* ABOUT.HTML */
@@ -544,11 +655,27 @@ h5 {
 
 /* Checkout.html */
 
+.address-header {
+  font-size: 1.3rem;
+}
+
+.address-box {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adress-style {
+  font-size: 1rem;
+}
+
 .checkout-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   border: none;
+  margin-bottom: 5rem;
+  right: 0px;
 }
 
 fieldset {
@@ -566,6 +693,7 @@ fieldset {
 
 form {
   margin-top: 1rem;
+  display: block;
 }
 
 .BUYBTN {
@@ -619,9 +747,7 @@ form input {
 /* lastpage */
 
 .thank-you {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+
   margin: 10rem auto;
   min-height: 10rem;
   max-width: 50%;

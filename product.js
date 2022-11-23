@@ -1,4 +1,5 @@
-const url = "https://cm.ahutvikling.no/wp-json/wc/store/v1/products";
+const url =
+  "https://cm.ahutvikling.no/wp-json/wc/store/v1/products?consumer_key=ck_65120cf5daaff7d98c0b564605247cdf73c2f4ea&consumer_secret=cs_15fe706d0ca51206c883c8f5e1079c97857be9e0";
 
 const productContainer = document.querySelector(".jackets");
 

@@ -391,7 +391,7 @@ h5 {
   padding: 1rem;
 }
 
-.pinkJacket {
+.pinkjacket {
   height: 38%;
   width: 38%;
   margin: auto;
@@ -415,10 +415,12 @@ h5 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 1rem;
   font-size: 1rem;
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-transform: none;
   min-width: none;
-  line-height: 1rem;
+  text-align: center;
 }
 
 .checkOutBtn {
@@ -747,7 +749,6 @@ form input {
 /* lastpage */
 
 .thank-you {
-
   margin: 10rem auto;
   min-height: 10rem;
   max-width: 50%;

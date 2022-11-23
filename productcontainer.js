@@ -10,24 +10,24 @@ const id = params.get("id");
 
 const newUrl =
   "https://cm.ahutvikling.no/wp-json/wc/store/v1/products" +
+  "/" +
+  id +
   "?" +
   "consumer_key=ck_65120cf5daaff7d98c0b564605247cdf73c2f4ea&consumer_secret=cs_15fe706d0ca51206c883c8f5e1079c97857be9e0";
 
 async function callApiForProductpage(newUrl) {
   const response = await fetch(newUrl);
   const products = await response.json();
+  console.log(products);
+  console.log(products.name);
+  console.log(products.prices.price);
 
-  products.forEach(function (product) {
-    jacketSpecificContainer.innerHTML = `<h3>${product.name}</h3>
-      <img class="pinkJacket" src="${product.images[0].src}">
-      <h5 class="price">${product.prices.price},-</h5>
-      <div class="buttons">
-      <button class="add2c" onclick="addTooCart()">Add to cart</button>
-      <a href="checkout.html"><button class="checkOutBtn">Checkout</button></a>
-      <a href="index.html"><button class="shopmorebtn">Shop More</button></a>`;
-
-    title.innerText = `${product.name}`;
-  });
+  jacketSpecificContainer.innerHTML = `<h5>${products.name}</h5> <img class ="pinkjacket" src = "${products.images[0].src}" /><p class="price"> ${products.prices.price} ,- </p> 
+  <div class="buttons">
+    <a class ="add2c" href="checkout.html">Add to cart</a>
+    <a class ="add2c" href="index.html">Shop More</a>
+    <a class ="add2c" href="checkout.html">Checkout</a>
+  </div>`;
 }
 
 callApiForProductpage(newUrl);

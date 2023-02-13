@@ -1,6 +1,4 @@
 # RainydaysSite
-RainydaysSite
-# Your project title
 
 ![image](https://user-images.githubusercontent.com/24903009/218561149-891ece0d-d323-4fdc-8928-1157e8f30736.png)
 

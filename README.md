@@ -2,7 +2,8 @@
 RainydaysSite
 # Your project title
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://user-images.githubusercontent.com/24903009/218561149-891ece0d-d323-4fdc-8928-1157e8f30736.png)
+
 
 Rainydays ecommerce store. 
 

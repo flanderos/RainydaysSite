@@ -6,31 +6,33 @@ body {
   flex-direction: column;
   align-content: center;
   margin: auto;
+  overflow-x: hidden;
 }
 
 main {
-  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: #d8b066;
-  background-blend-mode: lighten;
   z-index: 1;
+
+  margin-bottom: 50px;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-image: url(images/Rain-texture.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 10rem;
-  position: relative;
 }
 
 .logo {
   width: 18%;
   min-width: 12rem;
   max-width: 15rem;
-  margin: auto;
+  margin-left: 50px;
 }
 
 .logo:hover {
@@ -46,6 +48,7 @@ header {
 /*Navigation Bar */
 
 .sidebar {
+  width: 100%;
   background-color: #0a3641;
   font-weight: bold;
   text-align: center;
@@ -76,25 +79,23 @@ a {
 
 .flex-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1000px;
-  margin: 5rem auto;
-  position: sticky;
-  border: 1px solid #0a3641;
-  box-sizing: border-box;
   background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: wrap;
+  max-width: 50%;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .jackets {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 1rem;
-  flex: 2;
-  justify-content: space-around;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  margin: 20px;
 }
 
 .container-footer {
@@ -131,6 +132,7 @@ footer {
   width: 20px;
   height: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.5s;
 }
 
 .box:hover {
@@ -220,9 +222,12 @@ button:hover {
   text-decoration: underline;
 }
 
+.product {
+  transition: 0.5s;
+}
+
 .product:hover {
-  transform: scale(1.03);
-  transition: 0.3s;
+  transform: scale(1.02);
 }
 
 /* icons */
@@ -244,11 +249,6 @@ button:hover {
 i {
   font-size: 1rem;
   color: #0a3641;
-}
-
-.cart-icon {
-  position: relative;
-  top: 5rem;
 }
 
 .footer-icons {
@@ -395,6 +395,7 @@ h5 {
   height: 38%;
   width: 38%;
   margin: auto;
+  transition: 0.4s;
 }
 
 .buttons {
@@ -453,21 +454,26 @@ h5 {
   line-height: 1rem;
 }
 
+.cartdiv {
+  display: flex;
+}
+
 #cart {
   color: #fff;
-  font-size: 2.5rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 20px;
+  font-size: 1.5rem;
+  z-index: 100;
+  margin-left: 10px;
 }
 
 .secondmenu {
   background-color: #53a1b4;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   color: #fff;
+  width: 100%;
 }
 
 .login-error-one {
@@ -480,10 +486,6 @@ h5 {
 
 #bold {
   font-weight: 700;
-}
-
-.cartdiv {
-  display: flex;
 }
 
 .login-input {
